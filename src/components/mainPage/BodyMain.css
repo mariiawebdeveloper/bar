@@ -1,10 +1,3 @@
-p{
-    font-family: 'Playfair Display', serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 32px;
-}
 
 body{
     margin-left: 20px;
@@ -12,13 +5,22 @@ body{
 }
 .intro-location{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .image-intro-location{
     display: flex;
     justify-content: space-evenly;
     gap: 5px;
     margin-bottom: 20px;
+}
+.intro-text-location{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
 }
 .lines-location{
 
@@ -31,6 +33,28 @@ body{
     margin-top: 100px;
     display: flex;
     justify-content: space-around;
+    align-items: baseline;
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+}
+.info-block-text{
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 64px;
+    color: #B40000;
+}
+.info-block-text-green{
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 64px;
+    color: #269926;
 }
 .photo-attachment{
     margin-top: 50px;
@@ -76,6 +100,7 @@ body{
     display: flex;
     justify-content: space-evenly;
     margin-top: 60px;
+    margin-bottom: 140px;
 }
 .drinks-offer-photo{
     padding: 20px;
@@ -98,4 +123,11 @@ body{
     display: flex;
     gap: 10px;
 
+}
+.menu-button{
+    color: black;
+    background: none;
+    border: #B40000 solid 2px;
+    padding: 5px;
+    margin: 5px;
 }

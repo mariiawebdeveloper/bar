@@ -1,38 +1,45 @@
-import React, { useState } from 'react';
+import React from 'react';
+import Slider from 'react-slick';
 import './Slider.css';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const images = [
-    './image/inside1.jpg',
-    './image/inside2.jpg',
-    './image/inside3.jpg',
-    './image/outside4.jpg',
-    './image/outside5.jpg'
+    './image/slider/slide1.jpg',
+    './image/slider/slide2.jpg',
+    './image/slider/slide3.jpg',
+    './image/slider/slide4.jpg',
+    './image/slider/slide5.jpg',
+    './image/slider/slide6.jpg',
+    './image/slider/slide7.jpg',
+    './image/slider/slide8.jpg',
+    './image/slider/slide9.jpg',
+    './image/slider/slide10.jpg',
 ];
 
-const Slider = () => {
-    const [index, setIndex] = useState(0);
+const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+};
 
-    const nextSlide = () => {
-        setIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
-    };
-
-    const prevSlide = () => {
-        setIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
-    };
-
+const SliderComponent = () => {
     return (
         <div className="slider-container">
-            <div className="slider-arrow slider-arrow-left" onClick={prevSlide}>
-                &lt;&lt; Prev
-            </div>
-            <div className="slider-image-container">
-                <img className="slider-image" src={images[index]} alt={`Slide ${index + 1}`} />
-            </div>
-            <div className="slider-arrow slider-arrow-right" onClick={nextSlide}>
-                Next &gt;&gt;
-            </div>
+            <div className={'slider-text'}>Best moments :</div>
+            <Slider {...settings}>
+                {images.map((image, i) => (
+                    <div key={i} className="slider-image-container" >
+                        <div className={'slider-fit'}><img className="slider-image" src={image} alt={`Slide ${i + 1}`} /></div>
+                    </div>
+                ))}
+            </Slider>
         </div>
     );
 };
 
-export default Slider;
+export default SliderComponent;

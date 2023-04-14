@@ -12,7 +12,7 @@ class Header extends Component {
                 <div className={'logo'}> <img width={200} height={120} src={'./image/Lantern.png'}/></div>
                 <div><Link to={'/'} className={'links'}>Home</Link></div>
                 <div><Link to={'/about'} className={'links'}>About us</Link></div>
-                <div><Link to={'/about'} className={'links'}>Our menu</Link></div>
+                <div><Link to={'/menu'} className={'links'}>Our menu</Link></div>
                 <div><Link to={'/about'} className={'links'}>Pages</Link></div>
                 <div><Link to={'/about'} className={'links'}>Blog</Link></div>
                 <div><Link to={'/about'} className={'links'}>Contact us</Link></div>
