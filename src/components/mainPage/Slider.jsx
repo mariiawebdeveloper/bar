@@ -14,7 +14,6 @@ const images = [
     './image/slider/slide7.jpg',
     './image/slider/slide8.jpg',
     './image/slider/slide9.jpg',
-    './image/slider/slide10.jpg',
 ];
 
 const settings = {

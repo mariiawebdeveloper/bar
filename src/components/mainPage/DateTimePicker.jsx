@@ -45,7 +45,7 @@ const DateTimePicker = () => {
                 <button type="submit" className="submit-button">Submit</button>
             </div>
         </form>
-            <div><img className={'photo-filter'} width={450} src={'./image/outside2.jpg'}/></div>
+            <div><img className={'photo-filter'} style={{ maxWidth: "100%" }} width={450} src={'./image/outside2.jpg'}/></div>
         </div>
     );
 };
