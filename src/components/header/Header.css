@@ -6,6 +6,9 @@
     padding-bottom: 30px;
     border-bottom: #B40000 2px solid;
 }
+.header-small{
+    display: none;
+}
 .logo{
     display: flex;
     padding-right: 10%;
@@ -33,4 +36,16 @@ a:hover{
 
 
     color: #B40000;
+}
+
+@media screen and (max-width: 700px) {
+    .header-location{
+        display: none;
+    }
+    .header-small{
+        display: block;
+    }
+    .logo{
+        display: flex;
+    }
 }

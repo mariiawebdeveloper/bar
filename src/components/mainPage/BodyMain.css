@@ -64,7 +64,7 @@ body{
     height: 200px;
     background-image: url("../../../public/image/fisheye.jpg");
     background-attachment: fixed;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    -webkit-filter: grayscale(100%); 
     filter: grayscale(100%);
 
 }
@@ -130,4 +130,88 @@ body{
     border: #B40000 solid 2px;
     padding: 5px;
     margin: 5px;
+}
+@media screen and (max-width: 700px) {
+    body {
+        margin: 0;
+    }
+    .intro-location {
+        flex-direction: column;
+    }
+    .image-intro-location {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .intro-text-location {
+        text-align: center;
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .info-location {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .info-block {
+        border-right: none;
+        padding-right: 0;
+    }
+    .info-block-text,
+    .info-block-text-green,
+    .offer,
+    .drinks {
+        font-size: 36px;
+        line-height: 48px;
+        text-align: center;
+    }
+    .discount-text {
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+    }
+    .drinks-offer-location {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 100px;
+    }
+    .drinks-offer-photo {
+        padding: 10px;
+        margin: 10px;
+        width: 80%;
+    }
+    .discount-text-number {
+        font-size: 20px;
+        line-height: 36px;
+        writing-mode: horizontal-tb;
+    }
+    .block-offer-location {
+        flex-direction: column;
+    }
+    .menu-button {
+        margin: 10px;
+    }
+    .photo-attachment {
+        height: 150px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .intro-location {
+        flex-direction: column;
+    }
+    .info-location {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .info-block {
+        margin: 10px 0;
+    }
+    .image-intro-location {
+        display: none;
+    }
+    .book-text {
+        text-align: center;
+    }
 }

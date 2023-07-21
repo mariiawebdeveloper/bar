@@ -17,8 +17,8 @@ function Body() {
                 </Col>
                 <Col span={12}>
                     <div className={"image-intro-location"}>
-                        <Image width={500} height={500} style={{maxWidth: "100%"}} src={"./image/inside1.jpg"}/>
-                        <Image width={400} height={400} style={{maxWidth: "100%"}} src={"./image/drinkwhite.jpg"}/>
+                        <Image src={"./image/inside1.jpg"} width={500}/>
+                        <Image src={"./image/drinkwhite.jpg"} width={400}/>
                     </div>
                 </Col>
             </Row>
@@ -67,21 +67,12 @@ function Body() {
                 <Col span={8} className={"block-offer-location"}>
                     <div className={"discount-text-number"}>Best offer!</div>
                     <div>
-                        <Image style={{maxWidth: "100%"}}
-                               className={"drinks-offer-photo"}
-                               width={500}
-                               src={"./image/promo.png"}
-                        />
+                        <Image src={"./image/promo.png"}/>
                     </div>
                 </Col>
                 <Col span={8} className={"block-offer-location"}>
                     <div>
-                        <Image
-                            style={{maxWidth: "100%"}}
-                            className={"drinks-offer-photo"}
-                            width={300}
-                            src={"./image/promo2.jpg"}
-                        />
+                        <Image src={"./image/promo2.jpg"}/>
                     </div>
                     <div className={"discount-text-number"}>Best offer!</div>
                 </Col>
