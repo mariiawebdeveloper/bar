@@ -14,7 +14,6 @@ const images = [
     './image/slider/slide7.jpg',
     './image/slider/slide8.jpg',
     './image/slider/slide9.jpg',
-    './image/slider/slide10.jpg',
 ];
 
 const settings = {
@@ -25,7 +24,23 @@ const settings = {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-};
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 2,
+            },
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                dots: false,
+                slidesToShow: 1,
+            },
+        },
+    ],
+}
+
 
 const SliderComponent = () => {
     return (
