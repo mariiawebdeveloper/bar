@@ -57,9 +57,6 @@ const Header = () => {
 
             </div>
             <div className={'header-small'}>
-                <div className={'logo'}>
-                    <img width={200} height={120} src={'./image/Lantern.png'} alt="Lantern Logo" />
-                </div>
                 <Dropdown overlay={menu}>
                     <a className="ant-dropdown-link" onClick={(e) => e.preventDefault()}>
                         Menu <DownOutlined />

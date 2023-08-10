@@ -55,7 +55,7 @@ a:hover{
     font-family: 'Centurion', serif;
     color: #B40000;
     font-size: 5rem;
-=======
+}
 @media screen and (max-width: 700px) {
     .header-location{
         display: none;

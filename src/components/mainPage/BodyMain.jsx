@@ -9,9 +9,7 @@ function Body() {
 
     return (
         <div>
-
             <div>
-
                 <div className={'photo-attachment2'}>
                     <div className={'together'}>
                         <div className={'the'}>the</div>
@@ -87,7 +85,7 @@ function Body() {
                 <div className={"book-text"}>
                     <p>Book</p><p className={'book-text-red'}>Your</p><p>Table</p>
                 </div>
-                <div className={'footer-location'}>
+                <div className={''}>
                     <div><p>+777777</p></div>
                     <div><p>gmailgmail@gmail.com</p></div>
                 </div>
