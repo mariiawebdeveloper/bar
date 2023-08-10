@@ -1,14 +1,27 @@
 import "./BodyMain.css";
 import Slider from "./Slider";
 import React, {useState} from "react";
-import DataTimePicker from "./DateTimePicker";
 import {Link} from "react-router-dom";
+import arrow from '../img/down-arrow.png'
 
 
 function Body() {
 
     return (
         <div>
+
+            <div>
+
+                <div className={'photo-attachment2'}>
+                    <div className={'together'}>
+                        <div className={'the'}>the</div>
+                        <div className={"Lantern"}>Lantern</div>
+                    </div>
+                    <div style={{paddingTop: '60px'}}>
+                        <img src={arrow} width={50} style={{filter: 'invert(100%)'}}/>
+                    </div>
+                </div>
+            </div>
 
             <div className={'intro-location'}>
                 <div className={'intro-text-location'}>
@@ -45,7 +58,8 @@ function Body() {
                     <div><p>Street 11 city country</p></div>
                 </div>
             </div>
-            <div className={'photo-attachment'}></div>
+            <div className={'photo-attachment'}>
+            </div>
             <div className={'drinks-offer-location'}>
                 <div>
                     <div className={'offer'}>Offer</div>
@@ -53,7 +67,10 @@ function Body() {
                     <div className={'discount-text'}>sometimes we make good discounts
                         on our drinks
                     </div>
-                    <div><button className={'menu-button'}><Link to={'/menu'} className={'links'}>Our menu</Link></button></div>
+                    <div>
+                        <button className={'menu-button'}><Link to={'/menu'} className={'links'}>Our menu</Link>
+                        </button>
+                    </div>
                 </div>
                 <div className={'block-offer-location'}>
                     <div className={'discount-text-number'}> Best offer!</div>
@@ -70,7 +87,12 @@ function Body() {
                 <div className={"book-text"}>
                     <p>Book</p><p className={'book-text-red'}>Your</p><p>Table</p>
                 </div>
-                <DataTimePicker/></div>
+                <div className={'footer-location'}>
+                    <div><p>+777777</p></div>
+                    <div><p>gmailgmail@gmail.com</p></div>
+                </div>
+
+            </div>
         </div>
     );
 }

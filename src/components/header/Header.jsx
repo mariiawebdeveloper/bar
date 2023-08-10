@@ -9,7 +9,10 @@ class Header extends Component {
         return (<>
 
             <div className={'header-location'}>
-                <div className={'logo'}> <img width={200} height={120} src={'./image/Lantern.png'}/></div>
+                <div className={'together2'}>
+                    <div className={'the2'}>the</div>
+                    <div className={"Lantern2"}>Lantern</div>
+                </div>
                 <div><Link to={'/'} className={'links'}>Home</Link></div>
                 <div><Link to={'/about'} className={'links'}>About us</Link></div>
                 <div><Link to={'/menu'} className={'links'}>Our menu</Link></div>
